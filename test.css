@@ -1,32 +1,15 @@
-.timeline {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 50px 0;
-}
-.timeline-item {
-    padding-left: 50px;
-    position: relative;
-    margin-bottom: 50px;
-}
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 10px;
-    width: 20px;
-    height: 20px;
-    background-color: #333;
-    border-radius: 50%;
-}
-.timeline-date {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.timeline-title {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-.timeline-description {
-    margin-bottom: 10px;
-}
+.skill {
+    width: 30px; /* фиксированная ширина */
+    height: 30px; /* фиксированная высота */
+    padding: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Обрезаем изображение по границам ячейки */
+  }
+  
+  .skill:hover {
+    transform: translateY(-5px);
+  }
+  

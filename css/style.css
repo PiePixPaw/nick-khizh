@@ -139,9 +139,9 @@ body {
 
 /*Скилы*/
 .skill {
-  width: 30px; /* фиксированная ширина */
-  height: 30px; /* фиксированная высота */
-  padding: 10px;
+  width: 60px; /* фиксированная ширина */
+  height: 60px; /* фиксированная высота */
+  padding: 5px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
