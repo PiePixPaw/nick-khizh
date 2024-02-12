@@ -1,0 +1,14 @@
+#container {
+    display: flex; /* Используем flexbox для выравнивания элементов */
+}
+
+#avatar {
+    width: 200px;
+    height: 200px;
+    background-color: #05161a;
+}
+
+#content {
+    flex: 1; /* Занимает все доступное пространство внутри контейнера */
+    background-color: #05161a; /* Цвет фона */
+}

@@ -1,8 +1,11 @@
 body { 
-    background-color: #FFFFFF;
-    color:rgb(0, 0, 0);  
+    background-color: #30333a;
+    color:#B79D9B;
     font-family:sans-serif;
 }
+
+
+
 
 .menu {
     text-align: center; /* Центрирование элементов меню */
@@ -13,8 +16,8 @@ body {
     height: 40px; /* Фиксированная высота элемента меню */
     line-height: 40px; /* Выравнивание текста по вертикали по центру */
     text-align: center; /* Выравнивание текста по горизонтали по центру */
-    background-color: #1E90FF; /* Цвет фона */
-    color: #FFFFFF; /* Цвет текста */
+    background-color: #51403D; /* Цвет фона */
+    color: #B79D9B; /* Цвет текста */
     text-decoration: none;
     border-radius: 5px; /* Скругление углов */
     margin-right: 0%; /* Отступ между элементами */
@@ -24,10 +27,42 @@ body {
   }
   
   .menu-item:hover {
-    background-color: #0056b3; /* Изменение цвета фона при наведении */
+    background-color: #B79D9B; /* Изменение цвета фона при наведении */
+    color:#51403D ;
   }
 
-  h1 {
+
+
+
+
+#container {
+    display: flex; /* Используем flexbox для выравнивания элементов */
+}
+
+#container p {
+    color: #FFFFFF;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+#avatar {
+    width: 400px;
+    height: 400px;
+    background-color: #30333a;
+}
+
+#content {
+    flex: 1; /* Занимает все доступное пространство внутри контейнера */
+    background-color: #30333a; /* Цвет фона */
+}
+
+
+
+
+
+
+  /*список проектов*/
+ 
+#proj {
     background-color: #1E90FF; /* Цвет фона */
     color: #FFFFFF;  /* Цвет текста */
     text-align: center; /* Выравнивание текста по центру */
@@ -36,25 +71,7 @@ body {
     margin-bottom: 5px;
   }
 
-  #avatar {
-    display: block;
-    margin: 20px auto; 
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-  }
-
- #proj{
-  background-color: #1E90FF; /* Цвет фона */
-  color: #FFFFFF;  /* Цвет текста */
-  text-align: center; /* Выравнивание текста по центру */
-  margin-top: 50px; /* Отступ сверху */
-  border-radius: 5px; /* Скругление углов */
-  margin-bottom: 5px;
- }
-
-  /*список проектов*/
-  .projects {
+.projects {
     display: flex; /* Используем flexbox */
     flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
     justify-content: space-around; /* Выравниваем элементы по ширине контейнера с равными промежутками между ними */
@@ -83,7 +100,7 @@ body {
     left: 0; /* Располагаем псевдоэлемент относительно левого края родительского элемента */
     width: 100%; /* Занимаем 100% ширины родительского элемента */
     height: 100%; /* Занимаем 100% высоты родительского элемента */
-    background-color: rgba(0, 0, 0, 0.5); /* Затемняющий цвет фона */
+    background-color: #B79D9B; /* Затемняющий цвет фона */
     opacity: 0; /* Начальное значение прозрачности (псевдоэлемент невидим) */
     transition: opacity 0.3s ease; /* Плавное изменение прозрачности при анимации */
 }
@@ -103,5 +120,5 @@ body {
 }
 
 .project:hover .description {
-    opacity: 1; /* Увеличиваем прозрачность при наведении, чтобы показать текст описания *
-
+    opacity: 1; /* Увеличиваем прозрачность при наведении, чтобы показать текст описания */
+}
