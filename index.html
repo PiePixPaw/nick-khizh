@@ -19,7 +19,7 @@
         <meta name="keywords" content="qa, portfolio, resume, qae">
 
         <!-- Link to CSS styles -->
-        <link src="stylesheet" href="styles.css">
+        <link src="stylesheet" href="style.css">
 
     </head>
     <body>
@@ -36,7 +36,7 @@
             </nav>
         <!--My photo-->
             <h1>MYKOLA KHIZHNICHENKO</h1>
-            <img src="avatar.jpg" alt="My photo" width="200" height="200" style="border-radius:50%;">
+            <img src="avatar.jpg" alt="My photo" id="avatar">
             <p>    
              I am a manual QA engineer. Looking for a job as a trainee/ junior QA. I already
             have experience of working in teams, communicating with clients, developing
@@ -50,11 +50,28 @@
         </header>
         <main>
             <h2 id="proj">Projects</h2>
-                <a href="#qaukraine">QA Ukraine</a><br>
-                <a href="#bugreport">How is my bug report looks like</a><br>
-                <a href="#contacts">Contacts</a><br>
-                <a href="#mysite">My web CV</a><br>
+            <div class="projects">
+                <div class="project">
+                    <a href="index.html">
+                        <img src="fix.jpg" alt="text">
+                        <span class="description">QA Ukraine</span>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="index.html">
+                        <img src="fix.jpg" alt="text">
+                        <span class="description">Pethouse</span>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="index.html">
+                        <img src="fix.jpg" alt="text">
+                        <span class="description">MyCV</span>
+                    </a>
+                </div>
                 
+                <!-- Добавьте другие элементы <div class="project"> по аналогии -->
+            </div> 
             <h2 id="career">Career History</h2>
                 <a href="#dms">2018 - 2020 Digital Marketing Specialist</a><br>
                 <a href="#ppcas">2020 - 2022 PPC & Analysis Specialist</a><br>
