@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Carousel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            margin: 0;
+        }
+
+        .carousel-container {
+            overflow: hidden;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .carousel-content {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-item {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Skills Carousel</h2>
+
+    <div class="carousel-container">
+        <div class="carousel-content">
+            <div class="carousel-item">
+                <table>
+                    <tr> 
+                        <td>HTML</td>
+                        <td>CSS</td>
+                        <td>SQL</td>
+                    </tr>
+                    <tr> 
+                        <td>Postman</td>
+                        <td>DevTools</td>
+                        <td>Jmeter</td>
+                    </tr>
+                    <tr> 
+                        <td>TestRail</td>
+                        <td>JIRA</td>
+                        <td>Slack</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+  
