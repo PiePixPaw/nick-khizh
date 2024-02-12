@@ -1,14 +1,27 @@
-#container {
-    display: flex; /* Используем flexbox для выравнивания элементов */
-}
-
-#avatar {
-    width: 200px;
-    height: 200px;
-    background-color: #05161a;
-}
-
-#content {
-    flex: 1; /* Занимает все доступное пространство внутри контейнера */
-    background-color: #05161a; /* Цвет фона */
-}
+.menu {
+    text-align: center; /* Центрирование элементов меню */
+    background-color: rgba(81, 64, 61, 0.8); /* Прозрачный цвет фона */
+    position: sticky; /* Прилипание */
+    top: 0; /* Прилипание к верху экрана */
+    z-index: 1000; /* Позиционирование поверх остальных элементов */
+  }
+.menu-item {
+    display: inline-block;
+    width: 140px; /* Фиксированная ширина элемента меню */
+    height: 40px; /* Фиксированная высота элемента меню */
+    line-height: 40px; /* Выравнивание текста по вертикали по центру */
+    text-align: center; /* Выравнивание текста по горизонтали по центру */
+    background-color: #51403D; /* Цвет фона */
+    color: #B79D9B; /* Цвет текста */
+    text-decoration: none;
+    border-radius: 5px; /* Скругление углов */
+    margin-right: 0%; /* Отступ между элементами */
+    margin-bottom: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Плавные переходы при наведении */
+    font-size: large;
+  }
+  
+  .menu-item:hover {
+    background-color: #B79D9B; /* Изменение цвета фона при наведении */
+    color:#51403D ;
+  }

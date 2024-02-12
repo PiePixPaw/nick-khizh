@@ -6,9 +6,13 @@ body {
 
 
 
-
+/*навигация*/
 .menu {
     text-align: center; /* Центрирование элементов меню */
+    background-color: #51403D; 
+    position: sticky; /* Прилипание */
+    top: 0; /* Прилипание к верху экрана */
+    z-index: 1000; /* Позиционирование поверх остальных элементов */
   }
 .menu-item {
     display: inline-block;
@@ -33,8 +37,7 @@ body {
 
 
 
-
-
+/* Поле с аватаром и текстом*/
 #container {
     display: flex; /* Используем flexbox для выравнивания элементов */
 }
@@ -55,16 +58,17 @@ body {
     background-color: #30333a; /* Цвет фона */
 }
 
+#content h1 {
+    font-size: 50px;
+}
 
 
 
 
-
-  /*список проектов*/
- 
+/*список проектов*/
 #proj {
-    background-color: #1E90FF; /* Цвет фона */
-    color: #FFFFFF;  /* Цвет текста */
+    background-color: #B0A6A7; /* Цвет фона */
+    color: #30333a;  /* Цвет текста */
     text-align: center; /* Выравнивание текста по центру */
     margin-top: 50px; /* Отступ сверху */
     border-radius: 5px; /* Скругление углов */
@@ -75,6 +79,8 @@ body {
     display: flex; /* Используем flexbox */
     flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
     justify-content: space-around; /* Выравниваем элементы по ширине контейнера с равными промежутками между ними */
+    background-color: #B0A6A7;
+    padding: 50px; 
 }
 
 .project {
@@ -100,7 +106,7 @@ body {
     left: 0; /* Располагаем псевдоэлемент относительно левого края родительского элемента */
     width: 100%; /* Занимаем 100% ширины родительского элемента */
     height: 100%; /* Занимаем 100% высоты родительского элемента */
-    background-color: #B79D9B; /* Затемняющий цвет фона */
+    background-color: #30333a; /* Затемняющий цвет фона */
     opacity: 0; /* Начальное значение прозрачности (псевдоэлемент невидим) */
     transition: opacity 0.3s ease; /* Плавное изменение прозрачности при анимации */
 }
@@ -121,4 +127,38 @@ body {
 
 .project:hover .description {
     opacity: 1; /* Увеличиваем прозрачность при наведении, чтобы показать текст описания */
+}
+
+
+/*футер*/
+.footer {
+  background-color: #51403D; /* Цвет фона футера */
+  padding: 10px 0; /* Внутренний отступ футера */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1570px; /* Максимальная ширина контента футера */
+  margin: 0 auto; /* Центрирование контента футера */
+}
+
+.contact-info {
+  text-align: left; /* Выравнивание контактной информации по левому краю */
+  margin-left: 45px;
+  color: #B79D9B;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.icon {
+  margin-right: 10px; /* Отступ между иконками */
+}
+
+.icon img {
+  width: 40px; /* Размер иконок */
+  height: 40px;
 }
