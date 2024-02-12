@@ -1,27 +1,32 @@
-.menu {
-    text-align: center; /* Центрирование элементов меню */
-    background-color: rgba(81, 64, 61, 0.8); /* Прозрачный цвет фона */
-    position: sticky; /* Прилипание */
-    top: 0; /* Прилипание к верху экрана */
-    z-index: 1000; /* Позиционирование поверх остальных элементов */
-  }
-.menu-item {
-    display: inline-block;
-    width: 140px; /* Фиксированная ширина элемента меню */
-    height: 40px; /* Фиксированная высота элемента меню */
-    line-height: 40px; /* Выравнивание текста по вертикали по центру */
-    text-align: center; /* Выравнивание текста по горизонтали по центру */
-    background-color: #51403D; /* Цвет фона */
-    color: #B79D9B; /* Цвет текста */
-    text-decoration: none;
-    border-radius: 5px; /* Скругление углов */
-    margin-right: 0%; /* Отступ между элементами */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.timeline-item {
+    padding-left: 50px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+}
+.timeline-date {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.timeline-title {
+    font-size: 20px;
     margin-bottom: 5px;
-    transition: background-color 0.3s, color 0.3s; /* Плавные переходы при наведении */
-    font-size: large;
-  }
-  
-  .menu-item:hover {
-    background-color: #B79D9B; /* Изменение цвета фона при наведении */
-    color:#51403D ;
-  }
+}
+.timeline-description {
+    margin-bottom: 10px;
+}
