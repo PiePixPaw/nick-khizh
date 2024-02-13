@@ -87,7 +87,7 @@ body {
 }
 
 .images img {
-  width: 200px;
+  width: 100px;
   height: 100px;
   margin: 5px;
   cursor: pointer;
@@ -220,6 +220,4 @@ body {
   margin: 0 auto; 
   padding: 0 20px; 
 }
-
-
 
