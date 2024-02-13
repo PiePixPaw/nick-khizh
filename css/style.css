@@ -1,6 +1,6 @@
 
 body { 
-    background-color: #252322;
+    background-color: #0a0a09 ;
     color:#FFFCF2;
     font-family:sans-serif;
 }
@@ -9,28 +9,28 @@ body {
 
 /*навигация*/
 .menu {
-    text-align: center; /* Центрирование элементов меню */
-    background-color: #403D39; 
+    text-align: center; 
+    background-color: #403d39; 
     margin: 0 auto;
   }
 .menu-item {
     display: inline-block;
-    width: 140px; /* Фиксированная ширина элемента меню */
-    height: 40px; /* Фиксированная высота элемента меню */
-    line-height: 40px; /* Выравнивание текста по вертикали по центру */
-    text-align: center; /* Выравнивание текста по горизонтали по центру */
-    background-color: #403D39; /* Цвет фона */
-    color: #CCC5B9; /* Цвет текста */
+    width: 140px; 
+    height: 40px; 
+    line-height: 40px; 
+    text-align: center; 
+    background-color: #403d39; 
+    color: #CCC5B9; 
     text-decoration: none;
-    border-radius: 5px; /* Скругление углов */
-    margin-right: 0%; /* Отступ между элементами */
+    border-radius: 5px; 
+    margin-right: 0%; 
     margin-bottom: 5px;
-    transition: background-color 0.3s, color 0.3s; /* Плавные переходы при наведении */
+    transition: background-color 0.3s, color 0.3s; 
     font-size: large;
   }
   
 .menu-item:hover {
-    background-color: #CCC5B9; /* Изменение цвета фона при наведении */
+    background-color: #CCC5B9; 
     color:#403D39 ;
 }
 
@@ -38,7 +38,7 @@ body {
 
 /* Поле с аватаром и текстом*/
 #container {
-    display: flex; /* Используем flexbox для выравнивания элементов */
+    display: flex; 
     
 }
 
@@ -53,8 +53,8 @@ body {
 }
 
 #content {
-    flex: 1; /* Занимает все доступное пространство внутри контейнера */
-    background-color: #252422; /* Цвет фона */
+    flex: 1; 
+    background-color: #252422; 
 }
 
 #content h1 {
@@ -67,79 +67,63 @@ body {
 
 
 /*список проектов*/
-#proj {
-    background-color: #403D39; /* Цвет фона */
-    color: #CCC5B9;  /* Цвет текста */
-    text-align: center; /* Выравнивание текста по центру */
-    margin-top: 50px; /* Отступ сверху */
-    margin-bottom: 0px;
-  }
 
-.projects {
-    display: flex; /* Используем flexbox */
-    flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-    justify-content: space-around; /* Выравниваем элементы по ширине контейнера с равными промежутками между ними */
-    background-color: #CCC5B9;
-    padding: 10px; 
+.container {
+  display: flex;
+  background-color: #CCC5B9;
 }
 
-.project {
-    position: relative; /* Относительное позиционирование для .project */
-    width: 30%; /* Ширина каждого элемента будет 20% от родительского контейнера */
-    margin-bottom: 20px; /* Добавляем отступ снизу для создания промежутка между рядами */
+.images {
+  flex: 1;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
 }
 
-.project img {
-    width: 100%; /* Изображение будет занимать 100% ширины родительского контейнера */
-    height: auto; /* Позволяет изображениям сохранять пропорции */
-
+.images .row {
+  display: flex;
+  margin-left: 25px;
 }
 
-.project a {
-    display: block; /* Превращаем ссылку в блочный элемент */
-    position: relative; /* Относительное позиционирование для ссылки */
+.images img {
+  width: 200px;
+  height: 100px;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow:0 0 10px #0e0d0d67;
 }
 
-.project a::before {
-    content: ""; /* Добавляем пустое содержимое для псевдоэлемента */
-    position: absolute; /* Абсолютное позиционирование для псевдоэлемента */
-    top: 0; /* Располагаем псевдоэлемент относительно верхнего края родительского элемента */
-    left: 0; /* Располагаем псевдоэлемент относительно левого края родительского элемента */
-    width: 100%; /* Занимаем 100% ширины родительского элемента */
-    height: 100%; /* Занимаем 100% высоты родительского элемента */
-    background-color: #252422; /* Затемняющий цвет фона */
-    opacity: 0; /* Начальное значение прозрачности (псевдоэлемент невидим) */
-    transition: opacity 0.8s ease; /* Плавное изменение прозрачности при анимации */
+.images img:hover {
+  transform: scale(1.1);
 }
 
-.project:hover a::before {
-    opacity: 1; /* Увеличиваем прозрачность при наведении, чтобы показать затемнение */
+.text {
+  flex: 1;
+  padding: 0 20px;
 }
 
-.project .description {
-    position: absolute; /* Абсолютное позиционирование для текста описания */
-    top: 50%; /* Располагаем текст по вертикали на 50% высоты .project */
-    left: 50%; /* Располагаем текст по горизонтали на 50% ширины .project */
-    transform: translate(-50%, -50%); /* Центрируем текст относительно его собственных размеров */
-    color: #FFFCF2; /* Устанавливаем белый цвет текста */
-    opacity: 0; /* Начальное значение прозрачности (текст невидим) */
-    transition: opacity 0.3s ease; /* Плавное изменение прозрачности при анимации */
+.text h2 {
+  text-align: justify;
+  font-size: 50px;
+  color:#403D39;
 }
 
-.project:hover .description {
-    opacity: 1; /* Увеличиваем прозрачность при наведении, чтобы показать текст описания */
+.text p {
+  text-align: justify;
 }
 
 /*Скилы*/
 .skill {
-  width: 50px; /* фиксированная ширина */
-  height: 50px; /* фиксированная высота */
+  width: 50px; 
+  height: 50px; 
   padding: 5px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease;
-  overflow: hidden; /* Обрезаем изображение по границам ячейки */
+  overflow: hidden; 
 }
 
 .skill:hover {
@@ -150,26 +134,23 @@ body {
 
 /*история работы*/
 
-#career {
-  background-color: #403D39; /* Цвет фона */
-  color: #CCC5B9;  /* Цвет текста с важностью */
-  text-align: center; /* Выравнивание текста по центру */
-  margin-top: 50px; /* Отступ сверху */
-  margin-bottom: 0px;
-}
-
-
 .timeline {
   position: relative;
-  max-width: 800px;
   margin: 0 auto;
   padding: 50px 0;
+  background-color: #252422;
 }
+
 .timeline-item {
   padding-left: 50px;
   position: relative;
   margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px; 
+  text-align: left; 
 }
+
 .timeline-item::before {
   content: '';
   position: absolute;
@@ -180,16 +161,19 @@ body {
   background-color: #EB5E28;
   border-radius: 50%;
 }
+
 .timeline-date {
   font-weight: bold;
   margin-bottom: 10px;
   color:#EB5E28;
 }
+
 .timeline-title {
   font-size: 20px;
   margin-bottom: 5px;
   color:#CCC5B9;
 }
+
 .timeline-description {
   margin-bottom: 10px;
   color:#FFFCF2;
@@ -197,20 +181,20 @@ body {
 
 /*футер*/
 .footer {
-  background-color: #403D39; /* Цвет фона футера */
-  padding: 10px 0; /* Внутренний отступ футера */
+  background-color: #403D39;
+  padding: 10px 0; 
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1570px; /* Максимальная ширина контента футера */
-  margin: 0 auto; /* Центрирование контента футера */
+  max-width: 1570px; 
+  margin: 0 auto; 
 }
 
 .contact-info {
-  text-align: left; /* Выравнивание контактной информации по левому краю */
+  text-align: left; 
   margin-left: 45px;
   color: #FFFCF2;
   font-size: 2;
@@ -221,18 +205,21 @@ body {
 }
 
 .icon {
-  margin-right: 10px; /* Отступ между иконками */
+  margin-right: 10px; 
 }
 
 .icon img {
-  width: 40px; /* Размер иконок */
+  width: 40px; 
   height: 40px;
 }
 
 
 .wrapper {
-  max-width: 1170px; /* Максимальная ширина обертки */
+  max-width: 1170px; 
   min-width: 600px;
-  margin: 0 auto; /* Центрируем обертку на странице */
-  padding: 0 20px; /* Добавляем отступы по бокам обертки */
+  margin: 0 auto; 
+  padding: 0 20px; 
 }
+
+
+

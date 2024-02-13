@@ -1,15 +1,35 @@
-.skill {
-    width: 30px; /* фиксированная ширина */
-    height: 30px; /* фиксированная высота */
-    padding: 10px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: transform 0.3s ease;
-    overflow: hidden; /* Обрезаем изображение по границам ячейки */
-  }
-  
-  .skill:hover {
-    transform: translateY(-5px);
-  }
-  
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
