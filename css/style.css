@@ -1,7 +1,7 @@
 
 body { 
-    background-color: #30333a;
-    color:#B79D9B;
+    background-color: #252322;
+    color:#FFFCF2;
     font-family:sans-serif;
 }
 
@@ -10,7 +10,8 @@ body {
 /*навигация*/
 .menu {
     text-align: center; /* Центрирование элементов меню */
-    background-color: #51403D; 
+    background-color: #403D39; 
+    margin: 0 auto;
   }
 .menu-item {
     display: inline-block;
@@ -18,8 +19,8 @@ body {
     height: 40px; /* Фиксированная высота элемента меню */
     line-height: 40px; /* Выравнивание текста по вертикали по центру */
     text-align: center; /* Выравнивание текста по горизонтали по центру */
-    background-color: #51403D; /* Цвет фона */
-    color: #B79D9B; /* Цвет текста */
+    background-color: #403D39; /* Цвет фона */
+    color: #CCC5B9; /* Цвет текста */
     text-decoration: none;
     border-radius: 5px; /* Скругление углов */
     margin-right: 0%; /* Отступ между элементами */
@@ -29,8 +30,8 @@ body {
   }
   
 .menu-item:hover {
-    background-color: #B79D9B; /* Изменение цвета фона при наведении */
-    color:#51403D ;
+    background-color: #CCC5B9; /* Изменение цвета фона при наведении */
+    color:#403D39 ;
 }
 
 
@@ -42,23 +43,24 @@ body {
 }
 
 #container p {
-    color: #B79D9B;
+    color: #FFFCF2;
     margin-left: 15px;
     margin-right: 5px;
 }
 #avatar {
     width: 400px;
     height: 400px;
-    background-color: #30333a;
 }
 
 #content {
     flex: 1; /* Занимает все доступное пространство внутри контейнера */
-    background-color: #30333a; /* Цвет фона */
+    background-color: #252422; /* Цвет фона */
 }
 
 #content h1 {
     font-size: 50px;
+    color:#EB5E28;
+    margin-left: 15px;
 }
 
 
@@ -66,11 +68,10 @@ body {
 
 /*список проектов*/
 #proj {
-    background-color: #51403D; /* Цвет фона */
-    color: #B79D9B;  /* Цвет текста */
+    background-color: #403D39; /* Цвет фона */
+    color: #CCC5B9;  /* Цвет текста */
     text-align: center; /* Выравнивание текста по центру */
     margin-top: 50px; /* Отступ сверху */
-
     margin-bottom: 0px;
   }
 
@@ -78,7 +79,7 @@ body {
     display: flex; /* Используем flexbox */
     flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
     justify-content: space-around; /* Выравниваем элементы по ширине контейнера с равными промежутками между ними */
-    background-color: #B0A6A7;
+    background-color: #CCC5B9;
     padding: 10px; 
 }
 
@@ -106,7 +107,7 @@ body {
     left: 0; /* Располагаем псевдоэлемент относительно левого края родительского элемента */
     width: 100%; /* Занимаем 100% ширины родительского элемента */
     height: 100%; /* Занимаем 100% высоты родительского элемента */
-    background-color: #30333a; /* Затемняющий цвет фона */
+    background-color: #252422; /* Затемняющий цвет фона */
     opacity: 0; /* Начальное значение прозрачности (псевдоэлемент невидим) */
     transition: opacity 0.8s ease; /* Плавное изменение прозрачности при анимации */
 }
@@ -120,7 +121,7 @@ body {
     top: 50%; /* Располагаем текст по вертикали на 50% высоты .project */
     left: 50%; /* Располагаем текст по горизонтали на 50% ширины .project */
     transform: translate(-50%, -50%); /* Центрируем текст относительно его собственных размеров */
-    color: white; /* Устанавливаем белый цвет текста */
+    color: #FFFCF2; /* Устанавливаем белый цвет текста */
     opacity: 0; /* Начальное значение прозрачности (текст невидим) */
     transition: opacity 0.3s ease; /* Плавное изменение прозрачности при анимации */
 }
@@ -143,9 +144,20 @@ body {
 
 .skill:hover {
   transform: translateY(-5px);
-}*/
+}
+
+
 
 /*история работы*/
+
+#career {
+  background-color: #403D39; /* Цвет фона */
+  color: #CCC5B9;  /* Цвет текста с важностью */
+  text-align: center; /* Выравнивание текста по центру */
+  margin-top: 50px; /* Отступ сверху */
+  margin-bottom: 0px;
+}
+
 
 .timeline {
   position: relative;
@@ -165,19 +177,22 @@ body {
   top: 10px;
   width: 20px;
   height: 20px;
-  background-color: #B79D9B;
+  background-color: #EB5E28;
   border-radius: 50%;
 }
 .timeline-date {
   font-weight: bold;
   margin-bottom: 10px;
+  color:#EB5E28;
 }
 .timeline-title {
   font-size: 20px;
   margin-bottom: 5px;
+  color:#CCC5B9;
 }
 .timeline-description {
   margin-bottom: 10px;
+  color:#FFFCF2;
 }
 
 
@@ -185,7 +200,7 @@ body {
 
 /*футер*/
 .footer {
-  background-color: #51403D; /* Цвет фона футера */
+  background-color: #403D39; /* Цвет фона футера */
   padding: 10px 0; /* Внутренний отступ футера */
 }
 
@@ -200,7 +215,7 @@ body {
 .contact-info {
   text-align: left; /* Выравнивание контактной информации по левому краю */
   margin-left: 45px;
-  color: #B79D9B;
+  color: #FFFCF2;
   font-size: 2;
 }
 
@@ -215,4 +230,12 @@ body {
 .icon img {
   width: 40px; /* Размер иконок */
   height: 40px;
+}
+
+
+.wrapper {
+  max-width: 1170px; /* Максимальная ширина обертки */
+  min-width: 600px;
+  margin: 0 auto; /* Центрируем обертку на странице */
+  padding: 0 20px; /* Добавляем отступы по бокам обертки */
 }
