@@ -11,9 +11,6 @@ body {
 .menu {
     text-align: center; /* Центрирование элементов меню */
     background-color: #51403D; 
-    position: sticky; /* Прилипание */
-    top: 0; /* Прилипание к верху экрана */
-    z-index: 1000; /* Позиционирование поверх остальных элементов */
   }
 .menu-item {
     display: inline-block;
@@ -41,10 +38,11 @@ body {
 /* Поле с аватаром и текстом*/
 #container {
     display: flex; /* Используем flexbox для выравнивания элементов */
+    
 }
 
 #container p {
-    color: #FFFFFF;
+    color: #B79D9B;
     margin-left: 15px;
     margin-right: 5px;
 }
@@ -203,6 +201,7 @@ body {
   text-align: left; /* Выравнивание контактной информации по левому краю */
   margin-left: 45px;
   color: #B79D9B;
+  font-size: 2;
 }
 
 .social-icons {
