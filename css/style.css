@@ -31,10 +31,10 @@ body {
     font-size: large;
   }
   
-  .menu-item:hover {
+.menu-item:hover {
     background-color: #B79D9B; /* Изменение цвета фона при наведении */
     color:#51403D ;
-  }
+}
 
 
 
@@ -145,7 +145,7 @@ body {
 
 .skill:hover {
   transform: translateY(-5px);
-}
+}*/
 
 /*история работы*/
 
