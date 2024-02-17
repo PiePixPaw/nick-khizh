@@ -26,6 +26,7 @@ body {
     margin-bottom: 5px;
     transition: background-color 0.3s, color 0.3s; 
     font-size: large;
+    font-weight: bold;
   }
   
 .menu-item:hover {
@@ -39,7 +40,6 @@ body {
 /* Поле с аватаром и текстом*/
 #container {
     display: flex; 
-    
 }
 
 #container p {
