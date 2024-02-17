@@ -61,10 +61,14 @@ body {
 #content h1 {
     font-size: 50px;
     color:#688E4E;
-    margin-left: 45px;
-    
+    margin-left: 45px;   
 }
 
+#content p {
+  font-size: 16px;
+  color:#D5DDDF;
+  margin-left: 45px;   
+}
 
 
 
@@ -138,6 +142,7 @@ body {
 
 .text p {
   text-align: justify;
+  font-size: 16px;
   color: #403D39;
   margin-right: 35px;
   margin-bottom: 35px;
@@ -193,10 +198,28 @@ body {
   color:#D5DDDF;
 }
 
+.timeline-container {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-title-container {
+  margin-right: 50px; 
+}
+
+.timeline-main-title {
+  font-size: 50px;
+  color: #688E4E; 
+  padding-left: 45px;
+}
+
+
 /*футер*/
 .footer {
   background-color: #1B2727;
-  padding: 10px 0; 
+  padding: 20px 0; 
 }
 
 .footer-content {
