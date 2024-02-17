@@ -1,35 +1,44 @@
-.carousel {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+.resume {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.carousel-container {
-  display: flex;
-  transition: transform 0.5s ease;
+.skills {
+  text-align: right;
 }
 
-.carousel img {
-  width: 100%;
-  height: auto;
+.skills h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.5);
-  border: none;
+.soft-skills, .hard-skills {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.soft-skills p, .hard-skills p {
+  font-weight: bold;
+}
+
+.soft-skill, .hard-skill-icons img {
   cursor: pointer;
-  padding: 10px;
-  font-size: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 
-.prev {
-  left: 10px;
+.soft-skill:hover, .hard-skill-icons img:hover {
+  transform: scale(1.1);
 }
 
-.next {
-  right: 10px;
+.hard-skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hard-skill-icons img {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  /* Add more styling as needed */
 }
