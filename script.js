@@ -15,3 +15,26 @@ function scrollToTop() {
     });
   }
   
+
+  function enlargeCertificate(element) {
+    var enlargedCertificate = document.getElementById('enlargedCertificate');
+    var enlargedCertificateImage = document.getElementById('enlargedCertificateImage');
+    var certificateSrc = element.getAttribute('data-src');
+    enlargedCertificateImage.src = certificateSrc;
+    enlargedCertificate.style.display = "block";
+  }
+  
+  function closeEnlargedCertificate() {
+    var enlargedCertificate = document.getElementById('enlargedCertificate');
+    enlargedCertificate.style.display = "none";
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var certificates = document.querySelectorAll('.certificate');
+    certificates.forEach(function(certificate) {
+      certificate.addEventListener('click', function() {
+        enlargeCertificate(certificate);
+      });
+    });
+  });
+  
