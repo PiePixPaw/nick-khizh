@@ -1,7 +1,7 @@
 
 body { 
     background-color: #D5DDDF;
-    font-family:sans-serif;
+    font-family:'Roboto';
 }
 
 
@@ -183,6 +183,7 @@ body {
 
 .timeline-date {
   font-weight: bold;
+  font-size: 14px;
   margin-bottom: 10px;
   color:#688E4E;
 }
@@ -194,6 +195,7 @@ body {
 }
 
 .timeline-description {
+  font-size: 16px;
   margin-bottom: 10px;
   color:#D5DDDF;
 }
@@ -234,7 +236,7 @@ body {
   text-align: left; 
   margin-left: 45px;
   color: #B2C5B2;
-  font-size: 2;
+  font-size: 18px;
 }
 
 .social-icons {
@@ -280,6 +282,7 @@ body {
 .skills-text {
   width: 45%;
   text-align: left;
+  font-size: 16px;
 }
 
 .skills-icons {
