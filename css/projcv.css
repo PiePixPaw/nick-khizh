@@ -1,0 +1,112 @@
+body { 
+    background-color: #D5DDDF;
+    font-family:'Roboto';
+}
+
+  /*футер*/
+.footer {
+    background-color: #1B2727;
+    padding: 20px 0; 
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1570px; 
+    margin: 0 auto; 
+  }
+  
+  .contact-info {
+    text-align: left; 
+    margin-left: 45px;
+    color: #B2C5B2;
+    font-size: 18px;
+  }
+  
+  .social-icons {
+    display: flex;
+  }
+  
+  .icon {
+    margin-right: 10px; 
+  }
+  
+  .icon img {
+    width: 40px; 
+    height: 40px;
+  }
+
+/*навигация*/
+.menu {
+    text-align: center; 
+    background-color: #D5DDDF; 
+    margin: 0 auto;
+  }
+.menu-item {
+    display: inline-block;
+    width: 140px; 
+    height: 40px; 
+    line-height: 40px; 
+    text-align: center; 
+    background-color: #1B2727; 
+    color:#D5DDDF;
+    text-decoration: none;
+    border-radius: 5px; 
+    margin-right: 0%; 
+    margin-bottom: 5px;
+    transition: background-color 0.3s, color 0.3s; 
+    font-size: large;
+    font-weight: bold;
+  }
+  
+.menu-item:hover {
+    background-color: #D5DDDF; 
+    color:#688E4E;
+    text-shadow: 0 0 5px #688E4E;
+}
+
+/*wrapper*/
+.wrapper {
+    max-width: 1170px; 
+    background-color: #D5DDDF;
+    min-width: 400px;
+    margin: 0 auto; 
+    padding: 0 20px; 
+  }
+
+/* main style*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*article*/
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 200px;
+}
+
+h1, h2, h3 {
+    color: #1B2727;
+}
+
+.glav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.glav ul ul {
+    margin-left: 20px;
+}
+
+.glav a {
+    text-decoration: none;
+    color: #1B2727;
+}
+
+.glav a:hover {
+    text-decoration: underline;
+}

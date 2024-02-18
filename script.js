@@ -1,3 +1,4 @@
+//scroll to top
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -15,7 +16,7 @@ function scrollToTop() {
     });
   }
   
-
+//certificate
   function enlargeCertificate(element) {
     var enlargedCertificate = document.getElementById('enlargedCertificate');
     var enlargedCertificateImage = document.getElementById('enlargedCertificateImage');
