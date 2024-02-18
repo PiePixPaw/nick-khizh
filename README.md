@@ -1,5 +1,4 @@
-# nick-khizh
-![Website Preview](https://piepixpaw.github.io/nick-khizh/assets/preview.png)
+# Mykola Khizhnichenko
 
 This website serves as my online resume, designed to provide information about my work experience, skills, and projects to potential employers and interested parties.
 
@@ -14,7 +13,7 @@ The Professional Resume Website is crafted to showcase me as a candidate for job
 
 ## Usage
 
-To view my resume and portfolio, simply visit [https://piepixpaw.github.io/nick-khizh/](https://piepixpaw.github.io/nick-khizh/).
+To view my resume and portfolio, simply visit [Mykola Khizhnichenko](https://piepixpaw.github.io/nick-khizh/).
 
 ## Requirements
 
