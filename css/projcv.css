@@ -80,17 +80,37 @@ body {
 .container {
     max-width: 1170px;
     margin: 50px auto;
-    padding: 0 200px;
+
 }
 
-h1, h2, h3 {
+h1 {
+  color: #1B2727;
+  font-size: 50px;
+
+}
+
+
+h2 {
     color: #1B2727;
+    font-size: 32px;
+    border-bottom: 1px solid #1B2727;
 }
 
-  #section2b img{
-    width: 300px; 
-    height: auto;
+h3 {
+  color: #1B2727;
+  font-size: 24px;
+  text-indent: 20px;
+}
 
+.container p {
+  color: #1B2727;
+  font-size: 16px;
+  text-indent: 20px;
+}
+
+#section2 img{
+    width: 250px; 
+    height: auto;
   }
 
 
