@@ -75,16 +75,10 @@ body {
     padding: 0 20px; 
   }
 
-/* main style*/
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
 /*article*/
 .container {
-    max-width: 800px;
+    max-width: 1170px;
     margin: 50px auto;
     padding: 0 200px;
 }
@@ -93,20 +87,23 @@ h1, h2, h3 {
     color: #1B2727;
 }
 
-.glav ul {
-    list-style: none;
-    padding: 0;
+  #section2b img{
+    width: 300px; 
+    height: auto;
+
+  }
+
+
+.mainimg {
+    width: auto;
+    margin: 0 auto;
 }
 
-.glav ul ul {
-    margin-left: 20px;
+.header {
+    background-color: #f2f2f2; /* Цвет фона шапки, можно изменить на нужный */
 }
 
-.glav a {
-    text-decoration: none;
-    color: #1B2727;
-}
-
-.glav a:hover {
-    text-decoration: underline;
+.header-image {
+    width: 100%;
+    height: auto;
 }
