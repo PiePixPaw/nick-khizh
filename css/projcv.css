@@ -78,7 +78,7 @@ body {
 
 /*article*/
 .container {
-    max-width: 1170px;
+    max-width: 850px;
     margin: 50px auto;
 
 }
@@ -86,11 +86,13 @@ body {
 h1 {
   color: #1B2727;
   font-size: 50px;
+  display: flex;
+  justify-content: center; 
 
 }
 
 
-h2 {
+.container h2 {
     color: #1B2727;
     font-size: 32px;
     border-bottom: 1px solid #1B2727;
@@ -119,11 +121,47 @@ h3 {
     margin: 0 auto;
 }
 
-.header {
-    background-color: #f2f2f2; /* Цвет фона шапки, можно изменить на нужный */
+/*summary container*/
+
+.block-container {
+  display: flex;
+  justify-content: center; 
 }
 
-.header-image {
-    width: 100%;
-    height: auto;
+.block-content {
+  display: flex;
+  max-width: 850px; 
+  max-height: 450px;
+}
+
+.left-side {
+  flex: 1; 
+  padding: 20px;
+  background-color: #B2C5B2;
+
+}
+
+.left-side h2 {
+  color: #1B2727;
+  font-size: 18px;
+}
+
+.left-side p {
+  color: #1B2727;
+  text-indent: 20px;
+  font-size: 16px;
+}
+
+.left-side img{
+  width: 10%;
+  height: 10%;
+}
+
+.right-side {
+  flex: 1; 
+}
+
+.right-side img {
+  width: 100%; 
+  height: auto; 
 }
