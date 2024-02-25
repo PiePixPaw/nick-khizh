@@ -46,6 +46,7 @@ body {
     color: #D5DDDF;
     margin-left: 45px;
     margin-right: 5px;
+    text-indent: 20px;
 }
 #avatar {
     width: 400px;
@@ -130,6 +131,7 @@ body {
 .text {
   flex: 1;
   padding: 0 20px;
+  text-indent: 20px;
   
 }
 
@@ -283,7 +285,20 @@ body {
   width: 45%;
   text-align: left;
   font-size: 16px;
+  text-indent: 20px;
 }
+
+.highlight{
+  color: #688E4E; 
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.highlight:hover {
+  transform: scale(1.2);
+}
+
 
 .skills-icons {
   width: 50%;
